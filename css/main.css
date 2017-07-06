@@ -11,8 +11,8 @@
   src: url("../fonts/FuturaPT-Book.ttf"); }
 
 @font-face {
-  font-family: 'Lucida Handwriting Italic';
-  src: url("../fonts/Lucida Handwriting Italic.ttf"); }
+  font-family: 'LucidaHandwritingItalic';
+  src: url("../fonts/LucidaHandwritingItalic.ttf"); }
 
 @font-face {
   font-family: 'FuturaPT-Demi';
@@ -68,7 +68,7 @@ header {
   .main-text h1 {
     padding-top: 100px;
     font-size: 90px;
-    font-family: 'Lucida Handwriting Italic';
+    font-family: 'LucidaHandwritingItalic';
     position: relative;
     right: 9px; }
   .main-text p {
