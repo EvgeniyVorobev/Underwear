@@ -54,14 +54,19 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) { 
+
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
+		.row {
+		flex-wrap:inherit;
+	}
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) { 
+
 }
 
 // Large devices (desktops, less than 1200px)

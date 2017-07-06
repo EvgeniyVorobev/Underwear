@@ -14,39 +14,11 @@
 		font-family: 'Futura Medium';
 	}
 }
-// .main-girl {
-// 	position:relative;
-// 	background: url("../img/main_model_index.png") no-repeat 100% 0;;
-// 	background-size: 100%;
-// 	width:638px;
-// 	height:788px;
-// 	max-height:100%;
-// }
+
 .main-girl {
 	width:636px;
+	position: relative;;
 }
-
-// .main-girl {
-// 	position:relative;
-// 	max-width: 638px;
-// 	width:638px;
-// 	background-image: url("../img/main_model_index.png");
-// 	// background-size: 100%;
-// 	background-position: 0px 0px;
-// 	height:1700px;
-// 	max-height:788px;
-// 	// max-height:100%;
-// }
-// 
-// .main-girl {
-// 	position: relative;
-// 		background: url("../img/main_model_index.png") no-repeat center center ;
-// 	// background-size: 100%;
-// 	// background-position: 0px 0px;
-// 	// height:70vw;
-// 	max-width: 60vw;
-// 	width:35vw;
-// }
 .mod_upper {
 	position: relative;
 	top: -135px;
@@ -58,4 +30,37 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.main-model {
+	background: url("../img/main_model.JPG") no-repeat 100% 0;
+	background-size: cover;
+	width:110%;
+	max-width:682px;
+	height:780px;
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+		.main-text {
+		h1 {
+font-size: 56px;
+		}
+		p {
+			font-size: 30px;
+		}
+	}
 }

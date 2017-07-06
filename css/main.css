@@ -64,6 +64,10 @@ body {
 #navigation ul {
   justify-content: space-between; }
 
+@media (max-width: 767px) {
+  .row {
+    flex-wrap: inherit; } }
+
 .main-text {
   display: flex;
   flex-direction: column;
@@ -79,7 +83,8 @@ body {
     font-family: 'Futura Medium'; }
 
 .main-girl {
-  width: 636px; }
+  width: 636px;
+  position: relative; }
 
 .mod_upper {
   position: relative;
@@ -92,3 +97,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+
+.main-model {
+  background: url("../img/main_model.JPG") no-repeat 100% 0;
+  background-size: cover;
+  width: 110%;
+  max-width: 682px;
+  height: 780px; }
+
+@media (max-width: 1199px) {
+  .main-text h1 {
+    font-size: 56px; }
+  .main-text p {
+    font-size: 30px; } }
