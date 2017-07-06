@@ -27,6 +27,9 @@ a {
 header {
   z-index: 100; }
 
+body {
+  overflow-x: hidden; }
+
 #navigation, #navigation-addon {
   font-family: 'FuturaPT-Medium';
   margin-top: 25px; }
@@ -76,16 +79,16 @@ header {
     font-family: 'Futura Medium'; }
 
 .main-girl {
-  position: relative;
-  background: url("../img/main_model_index.png") no-repeat 100% 0;
-  background-size: 100%;
-  width: 638px;
-  height: 788px;
-  max-height: 100%; }
+  width: 636px; }
 
 .mod_upper {
   position: relative;
-  top: -72px; }
+  top: -135px; }
 
 .mod_flex {
   display: flex; }
+
+.mod_flex_clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }

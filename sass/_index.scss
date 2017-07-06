@@ -14,14 +14,18 @@
 		font-family: 'Futura Medium';
 	}
 }
+// .main-girl {
+// 	position:relative;
+// 	background: url("../img/main_model_index.png") no-repeat 100% 0;;
+// 	background-size: 100%;
+// 	width:638px;
+// 	height:788px;
+// 	max-height:100%;
+// }
 .main-girl {
-	position:relative;
-	background: url("../img/main_model_index.png") no-repeat 100% 0;;
-	background-size: 100%;
-	width:638px;
-	height:788px;
-	max-height:100%;
+	width:636px;
 }
+
 // .main-girl {
 // 	position:relative;
 // 	max-width: 638px;
@@ -45,8 +49,13 @@
 // }
 .mod_upper {
 	position: relative;
-	top: -72px;
+	top: -135px;
 }
 .mod_flex {
 	display:flex;
+}
+.mod_flex_clients {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
