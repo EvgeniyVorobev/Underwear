@@ -3,10 +3,6 @@
   src: url("../fonts/FuturaPT-Medium.ttf"); }
 
 @font-face {
-  font-family: 'Futura-Medium';
-  src: url("../fonts/Futura-Medium.ttf"); }
-
-@font-face {
   font-family: 'FuturaPT-Book';
   src: url("../fonts/FuturaPT-Book2.ttf"); }
 
@@ -40,7 +36,7 @@ body {
   font-family: 'LucidaHandwritingItalic'; }
 
 .ffFuturaMedium {
-  font-family: 'Futura-Medium'; }
+  font-family: 'FuturaPT-Medium'; }
 
 .ffFururaPTBook {
   font-family: 'FuturaPT-Book'; }
@@ -119,6 +115,7 @@ footer {
   footer .lower-items {
     padding-top: 35px; }
   footer nav {
+    height: 31px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between; }
@@ -133,6 +130,8 @@ footer {
         text-decoration: none; }
 
 @media (max-width: 1199px) {
+  footer p:last-child {
+    padding-right: 35px; }
   footer h1 {
     font-size: 54px; }
   footer nav {
@@ -147,7 +146,7 @@ footer {
   justify-content: center; }
   .main-text h1 {
     padding-top: 100px;
-    font-size: 90px;
+    font-size: 89px;
     font-family: 'LucidaHandwritingItalic';
     position: relative;
     right: 9px; }
@@ -187,7 +186,7 @@ footer {
   #about .mod-font-2 {
     font-size: 20px;
     margin-bottom: 25px;
-    font-family: 'FUtura-Medium'; }
+    font-family: 'FuturaPT-Medium'; }
   #about .text-description {
     font-size: 27px;
     font-family: 'FuturaPT-Book';
@@ -212,7 +211,7 @@ footer {
     background: url("../img/3.png") no-repeat center 280px;
     background-size: 100%;
     border: 4px solid #b9a368;
-    font-family: 'Futura Medium'; }
+    font-family: 'FuturaPT-Medium'; }
     #education .education-block p:first-child {
       font-size: 20px;
       color: #b9a368;
@@ -258,7 +257,7 @@ footer {
   font-weight: 500;
   font-size: 36px;
   margin: 65px 0 15px 0;
-  font-family: 'Futura Medium'; }
+  font-family: 'FuturaPT-Medium'; }
 
 #instagram {
   margin: 65px 0 35px 0; }
@@ -266,14 +265,14 @@ footer {
     color: #b9a368;
     font-weight: 500;
     font-size: 36px;
-    font-family: 'Futura Medium'; }
+    font-family: 'FuturaPT-Medium'; }
   #instagram .follow_inst-btn {
     color: white;
     background-color: #b9a368;
     border-radius: 7px;
     padding: 5px 15px;
     font-size: 20px;
-    font-family: 'Futura Medium';
+    font-family: 'FuturaPT-Medium';
     text-decoration: none; }
   #instagram .lightwidget-block {
     margin-top: 23px; }
@@ -294,24 +293,26 @@ footer {
     width: 130%; }
   .mod_upper {
     top: -25px; }
-  #about .text-description {
-    font-size: 22px;
-    line-height: 26px; }
-  #about .mod-font-1 {
-    font-size: 29px;
-    padding-bottom: 5px; }
-  #about .mod-font-2 {
-    font-size: 18px; }
+  #about {
+    margin-top: 50px; }
+    #about .text-description {
+      font-size: 22px;
+      line-height: 26px; }
+    #about .mod-font-1 {
+      font-size: 29px;
+      padding-bottom: 5px; }
+    #about .mod-font-2 {
+      font-size: 18px; }
   #education {
-    margin-top: 65px; }
+    margin-top: 75px; }
     #education .text-block-1 {
-      margin: 0 0 65px 0; }
+      margin: 0 0 75px 0; }
       #education .text-block-1 .text-mod-3 {
-        padding-left: 116px; }
+        padding-left: 122px; }
     #education .education-block {
       background-position: center 185px; }
     #education .text-mod-1 {
-      font-family: 'Futura Medium';
+      font-family: 'FuturaPT-Medium';
       font-size: 29px;
       margin-bottom: 0; }
     #education .text-mod-2 {
@@ -324,4 +325,6 @@ footer {
   #instagram .mainly-text {
     font-size: 29px; }
   #clients .mainly-text {
-    font-size: 29px; } }
+    font-size: 29px; }
+  .lower img:last-child {
+    padding-right: 30px; } }

@@ -17,6 +17,7 @@ footer {
 		padding-top: 35px;
 	}
 	nav {
+		height: 31px;
 		margin-top: 10px;
 		display: flex;
 		justify-content: space-between;
@@ -36,6 +37,11 @@ footer {
 
 @media (max-width: 1199px) {
 	footer {
+		p {
+			&:last-child {
+				padding-right: 35px;
+			}
+		}
 		h1 {
 			font-size: 54px;
 		}
