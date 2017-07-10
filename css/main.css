@@ -85,7 +85,7 @@ body {
   bottom: 1px; }
 
 #navigation ul {
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 @media (max-width: 767px) {
   .row {
