@@ -1,0 +1,50 @@
+footer {
+	background-color: #262626;
+	padding: 75px 0;
+	h1 {
+		color:white;
+		font-size: 73px;
+		font-family: 'LucidaHandwritingItalic';
+	}
+	p {
+		color: #8e8e8e;
+		font-size: 20px;
+		font-family: 'FuturaPT-Book';
+		line-height: 40px;
+		margin-bottom: 0px;
+	}
+	.lower-items {
+		padding-top: 35px;
+	}
+	nav {
+		margin-top: 10px;
+		display: flex;
+		justify-content: space-between;
+		a{
+			color:white;
+			font-size: 20px;
+			text-decoration-color: #b9a368 !important;
+			font-family: 'FuturaPT-Medium';
+			&:hover {
+				color:white;
+				border-bottom:3px solid #b9a368;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	footer {
+		h1 {
+			font-size: 54px;
+		}
+		nav {
+			margin-top: 30px;
+		}
+		.lower-items {
+			display:flex;
+			justify-content: space-between;
+		}
+	}
+}

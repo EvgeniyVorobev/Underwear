@@ -7,7 +7,6 @@
 	}
 	ul {
 		display:flex;
-		text-decoration: none;
 		list-style-type: none;
 		z-index:2;
 		.hidden-items {
@@ -19,7 +18,12 @@
 		}
 		li {
 			a {
-				text-decoration: none;
+				&:hover {
+					// text-decoration: underline;
+					// text-decoration-color: #b9a368;
+					border-bottom:3px solid #b9a368;
+					text-decoration: none;
+				}
 			}
 			&:nth-child(2){
 				ul {
@@ -43,12 +47,19 @@
 	a {
 		color:white;
 	}
+	img {
+		position: relative;
+		bottom: 1px;
+	}
 }
 #navigation {
+	img {
+		position: relative;
+		bottom: 1px;
+	}
 	ul {
 		justify-content:space-between;	
 	}
-
 }
 
 
@@ -59,7 +70,7 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) {
-		.row {
+	.row {
 		flex-wrap:inherit;
 	}
 }
@@ -71,4 +82,18 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
+	#navigation {
+		position: absolute;
+		top:425px;
+		ul {
+			flex-direction:column;
+			.visible-items {
+				position: relative;
+			}
+		}
+		img {
+			width:6px;
+			bottom:2px;
+		}
+	}
 }

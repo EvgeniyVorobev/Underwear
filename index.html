@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <!-- <meta name="viewport" content="initial-scale=1"> -->
-  <meta name="viewport" content="width=780">
+  <meta name="viewport" content="width=740">
   <!-- <meta name="viewport" content="initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, width=940"> -->
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-  <title>index</title>
+  <title>Index</title>
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,12 +15,12 @@
   <header>
     <div class="container" style="z-index:100">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-xl-6">
           <section id="navigation">
            <nav>
              <ul>
                <li><a href="">ABOUT</a></li>
-               <li><a class="dropdown">PORTFOLIO</a>
+               <li><a class="dropdown">PORTFOLIO <img src="img/down-arrow-dark-black.png" alt=""></a>
                  <ul class="hidden-items">
                   <li><a href="">— Lingerie designer</a></li>
                   <li><a href="">— Lingerie technologist</a></li>
@@ -30,7 +30,7 @@
               </li>
               <li><a href="">EDUCATION</a></li>
               <li><a href="">CONTACTS</a></li>  
-              <li class="hidden-md-up"><a class="dropdown">ENGLISH</a>
+              <li class="hidden-xl-up"><a class="dropdown">ENGLISH <img src="img/down-arrow-dark-black.png" alt=""></a>
                <ul class="hidden-items">
                 <li><a href="">— Français</a></li>
               </ul>
@@ -39,11 +39,11 @@
         </nav>
       </section>
     </div>
-    <div class="col-md-6 hidden-sm-down" >
+    <div class="col-xl-6 hidden-lg-down" >
       <section id="navigation-addon">
        <nav>
          <ul>
-          <li><a class="dropdown">ENGLISH</a>
+          <li><a class="dropdown">ENGLISH <img class="white-arrow" src="img/down-arrow.png" alt=""> </a>
            <ul class="hidden-items">
             <li><a href="">— Français</a></li>
           </ul>
@@ -59,13 +59,13 @@
 <section id="studio">
   <div class="container mod_upper">
     <div class="row">
-      <div class="col-md-6 mod_flex">
+      <div class="col-xl-6 mod_flex">
         <div class="main-text">
           <h1>La vie de <br>la lingerie</h1>
-          <p>Lingerie Design Studio</p>
+          <p class="ac-color">Lingerie Design Studio</p>
         </div> 
       </div>
-      <div class="col-md-6">
+      <div class="col-xl-6">
         <!-- <img src="img/main_model.JPG" class="main-girl" alt=""> -->
         <div class="main-model"></div>
       </div>
@@ -76,13 +76,18 @@
 <section id="about">
   <div class="container">
     <div class="row">
-      <div class="col-md-6"><img class="img-fluid" style="" src="img/1.png" alt=""></div>
-      <div class="col-md-6">
-        <p>— About Anastasia Aleksova</p>
-        <p>STUDIO FOUNDER</p>
-        <p>Russian born, UK based Anastasia is a professional lingerie designer & pattern technologist with a Degree in Design & Technology. </p>
-        <p>Most of her career has been focused on industrial pattern making. The biggest achievement so far has been the opening of the production line for the largest retailer of lingerie in Russia "Wild Orchid". In her last role she was in charge of the department of technical design, pattern cutting, and sample production. She worked a lot with the designers and brand managers throughout the process.</p>
-        <p>Having been always interested in Art and Design, she finished the course Lingerie and Swimwear Design at UAL London College of fashion and then decided to open her own Design Lingerie Studio. It is called "La vie de la Lingerie" (Life of Lingerie) because it cover all aspects of creating lingerie, its whole lifecycle.</p>
+      <div class="col-xl-6 col-sm-5">
+        <img class="img-fluid" style="" src="img/1.png" alt="">
+        <img class="img-fluid hidden-xl-up" style="padding-top:27px" src="img/2.png" alt="">
+      </div>
+      <div class="col-xl-6 col-sm-7">
+        <p class="mod-font-1"><span class="ac-color ffFuturaMedium">— About</span><br class="hidden-xl-up"> <span class="ac-default ffLucida">Anastasia Aleksova</span></p>
+        <p class="mod-font-2">STUDIO FOUNDER</p>
+        <div class="text-description">
+          <p>Russian born, UK based Anastasia is a professional lingerie designer & pattern technologist with a Degree in Design & Technology. </p>
+          <p>Most of her career has been focused on industrial pattern making. The biggest achievement so far has been the opening of the production line for the largest retailer of lingerie in Russia "Wild Orchid". In her last role she was in charge of the department of technical design, pattern cutting, and sample production. She worked a lot with the designers and brand managers throughout the process.</p>
+          <p>Having been always interested in Art and Design, she finished the course Lingerie and Swimwear Design at UAL London College of fashion and then decided to open her own Design Lingerie Studio. It is called "La vie de la Lingerie" (Life of Lingerie) because it cover all aspects of creating lingerie, its whole lifecycle.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -91,66 +96,112 @@
 <section id="education">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="text-block_1">
-          <p><span>— Vision</span><span>Design is</span></p>
-          <p><span>Creativity+ <br>Engineering</span></p>
+      <div class="col-xl-6">
+        <div class="text-block-1">
+          <p><span class="text-mod-1">— Vision </span><span class="text-mod-2">Design is</span></p>
+          <p class="text-mod-3"><span>Creativity+ <br>Engineering</span></p>
         </div>
         <div class="education-block">
-          <p>EDUCATION</p>
-          <p>Master class in <br>Russian Love Birds Bra</p>
-          <p>How to sew a bra from A to Z</p>
+          <p class="">EDUCATION</p>
+          <p class="text-mod-1">Master class in <br class="hidden-lg-down">Russian Love Birds Bra</p>
+          <p class="text-mod-2">How to sew a bra from A to Z</p>
           <a class="education-button" href="">VIEW MASTER CLASS</a>
-          <img src="img/3.png" class="img-fluid"  alt="">
+          <!-- <img src="img/3.png" class="img-fluid"  alt=""> -->
+          <div class="bgimg-block"></div>
         </div>
       </div>
-      <div class="col-md-6"><img class="img-fluid" src="img/2.png" alt=""></div>
+      <div class="col-xl-6 hidden-lg-down"><img class="img-fluid" src="img/2.png" alt=""></div>
     </div>
   </div>
 </section>
 
-<section id="clients" style="display: none">
+<section id="clients">
   <div class="container">
     <div class="row">
-      <div class="col"><span>— Our clients</span></div>
+      <div class="col-xs-12">
+        <div class="mainly-text">— Our clients</div>
+      </div>
     </div>
-
-    <div class="row justify-content-around">
-      <div class="col-md-12 hidden-lg-down">
-        <div class="mod_flex_clients ">
-          <img src="img/log1.png" alt="" class="img-fluid">
-          <img src="img/log2.png" alt="" class="img-fluid">
-          <img src="img/log3.png" alt="" class="img-fluid">
-          <img src="img/log4.png" alt="" class="img-fluid">
-          <img src="img/log5.png" alt="" class="img-fluid">
-          <img src="img/log6.png" alt="" class="img-fluid">
+    <div class="visible-lg-block hidden-lg-down">
+      <div class="row justify-content-around">
+        <div class="col-xl-12">
+          <div class="mod_flex_clients ">
+            <img src="img/log1.png" alt="" class="img-fluid">
+            <img src="img/log2.png" alt="" class="img-fluid">
+            <img src="img/log3.png" alt="" class="img-fluid">
+            <img src="img/log4.png" alt="" class="img-fluid">
+            <img src="img/log5.png" alt="" class="img-fluid">
+            <img src="img/log6.png" alt="" class="img-fluid">
+          </div>
         </div>
       </div>
-      <div class="col-md-12 hidden-xl-up">
-        <div class="mod_flex_clients ">
-          <img src="img/log1.png" alt="" class="img-fluid">
-          <img src="img/log2.png" alt="" class="img-fluid">
-          <img src="img/log3.png" alt="" class="img-fluid">
+    </div>
+    <div class="visible-xs-block hidden-xl-up">
+      <div class="row justify-content-around flex--wrap">
+        <div class="col-xs-12">
+          <div class="mod_flex_clients ">
+            <img src="img/log1.png" alt="" class="img-fluid">
+            <img src="img/log2.png" alt="" class="img-fluid">
+            <img src="img/log3.png" alt="" class="img-fluid">
+          </div>
         </div>
-      </div>
-      <div class="col-md-12 hidden-xl-up">
-        <div class="mod_flex_clients ">
-          <img src="img/log4.png" alt="" class="img-fluid">
-          <img src="img/log5.png" alt="" class="img-fluid">
-          <img src="img/log6.png" alt="" class="img-fluid">
+        <div class="col-xs-12">
+          <div class="mod_flex_clients ">
+            <img src="img/log4.png" alt="" class="img-fluid">
+            <img src="img/log5.png" alt="" class="img-fluid">
+            <img src="img/log6.png" alt="" class="img-fluid">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<section id="instagram">
+  <div class="container">
+    <div class="row align-items-xs-center">
+      <div class="col-xl-5 col-xs-6"><div class="mainly-text">— Follow our <img src="img/instagram.png" alt=""> Instagram</div></div>
+      <div class="col-xl-7 col-xs-6 d-xs-flex justify-content-xs-end"><a class="follow_inst-btn" href="">FOLLOW @la_vie_de_la_lingerie</a></div>
+    </div>
 
+    <div class="row">
+      <div class="col-xs-12">
+       <div class="lightwidget-block">
+          <!-- LightWidget WIDGET -->
+        <script src="http://lightwidget.com/widgets/lightwidget.js"></script>
+         <iframe id="lightwidget-iframe" src="http://lightwidget.com/widgets/b7c6f93b58065b6ca118fb1ddf74b83c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer>
-
+<div class="container">
+  <div class="row flex-xs-column flex-xl-row"">
+    <div class="col-xl-5 col-xs-6"><h1>La vie de la lingerie</h1></div>
+    <div class="col-xl-6 col-xs-10 offset-xl-1">
+      <nav>
+      <a href="">ABOUT</a>
+      <a href="">PORTFOLIO</a>
+      <a href="">EDUCATION</a>
+      <a href="">CONTACTS</a>     
+     </nav>
+<div class="lower-items">
+<p>All rights reserved — © 2017.</p>
+<p>Made with love by <img src="img/footer_icon.png" alt=""></p>
+<!--   <p>All rights reserved — © 2017.<br class="hidden-lg-down"><span>Made with love by</span> <img src="img/footer_icon.png" alt=""> </p> -->
+</div>
+    </div>
+  </div>
 </footer>
 
-<script src="js/jquery-3.2.1.min.js"></script> 
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>  -->
 <script src="js/scripts.js"></script>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
 </body>
 </html>

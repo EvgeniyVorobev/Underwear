@@ -44,4 +44,15 @@ function hideMenu() {
 	}
 }
 
-//
+// Lightwidget modified
+
+
+// $(document).ready(function gridChange(){
+// 	if (innerWidth < 1199) {
+// 		console.log('ready');
+// 		var lightwidgetIframe = $('#lightwidget-iframe')[0];
+// 		console.log(lightwidgetIframe.contents());
+// 		// document.getElementsByClassName('lightwidget')[0].classList.add('AAAAAAAAAAAA')
+// 	}
+// })
+

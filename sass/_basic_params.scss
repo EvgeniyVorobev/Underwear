@@ -1,7 +1,8 @@
 // @font-face{font-family: 'Futura'; src:url('../fonts/Futura medium.ttf');}
 @font-face{font-family: 'FuturaPT-Medium'; src:url('../fonts/FuturaPT-Medium.ttf');}
 @font-face{font-family: 'Futura-Medium'; src:url('../fonts/Futura-Medium.ttf');}
-@font-face{font-family: 'FuturaPT-Book'; src:url('../fonts/FuturaPT-Book.ttf');}
+// @font-face{font-family: 'FuturaPT-Book'; src:url('../fonts/FuturaPT-Book.ttf');}
+@font-face{font-family: 'FuturaPT-Book'; src:url('../fonts/FuturaPT-Book2.ttf');}
 @font-face{font-family: 'LucidaHandwritingItalic'; src:url('../fonts/LucidaHandwritingItalic.ttf');}
 @font-face{font-family: 'FuturaPT-Demi'; src:url('../fonts/FuturaPT-Demi.ttf');}
 
@@ -17,4 +18,19 @@ header {
 body {
 	// position:fixed;
 	overflow-x:hidden;
+}
+.ac-color {
+	color: #b9a368;
+}
+.ac-default {
+	color: black;
+}
+.ffLucida {
+	font-family: 'LucidaHandwritingItalic';
+}
+.ffFuturaMedium {
+	font-family: 'Futura-Medium';
+}
+.ffFururaPTBook {
+	font-family: 'FuturaPT-Book';
 }

@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'FuturaPT-Book';
-  src: url("../fonts/FuturaPT-Book.ttf"); }
+  src: url("../fonts/FuturaPT-Book2.ttf"); }
 
 @font-face {
   font-family: 'LucidaHandwritingItalic';
@@ -30,6 +30,21 @@ header {
 body {
   overflow-x: hidden; }
 
+.ac-color {
+  color: #b9a368; }
+
+.ac-default {
+  color: black; }
+
+.ffLucida {
+  font-family: 'LucidaHandwritingItalic'; }
+
+.ffFuturaMedium {
+  font-family: 'Futura-Medium'; }
+
+.ffFururaPTBook {
+  font-family: 'FuturaPT-Book'; }
+
 #navigation, #navigation-addon {
   font-family: 'FuturaPT-Medium';
   margin-top: 25px; }
@@ -38,7 +53,6 @@ body {
     color: black; }
   #navigation ul, #navigation-addon ul {
     display: flex;
-    text-decoration: none;
     list-style-type: none;
     z-index: 2; }
     #navigation ul .hidden-items, #navigation-addon ul .hidden-items {
@@ -46,7 +60,8 @@ body {
     #navigation ul .visible-items, #navigation-addon ul .visible-items {
       display: inherit !important;
       position: absolute; }
-    #navigation ul li a, #navigation-addon ul li a {
+    #navigation ul li a:hover, #navigation-addon ul li a:hover {
+      border-bottom: 3px solid #b9a368;
       text-decoration: none; }
     #navigation ul li:nth-child(2) ul, #navigation-addon ul li:nth-child(2) ul {
       flex-direction: column;
@@ -61,12 +76,70 @@ body {
 #navigation-addon a {
   color: white; }
 
+#navigation-addon img {
+  position: relative;
+  bottom: 1px; }
+
+#navigation img {
+  position: relative;
+  bottom: 1px; }
+
 #navigation ul {
   justify-content: space-between; }
 
 @media (max-width: 767px) {
   .row {
     flex-wrap: inherit; } }
+
+@media (max-width: 1199px) {
+  #navigation {
+    position: absolute;
+    top: 425px; }
+    #navigation ul {
+      flex-direction: column; }
+      #navigation ul .visible-items {
+        position: relative; }
+    #navigation img {
+      width: 6px;
+      bottom: 2px; } }
+
+footer {
+  background-color: #262626;
+  padding: 75px 0; }
+  footer h1 {
+    color: white;
+    font-size: 73px;
+    font-family: 'LucidaHandwritingItalic'; }
+  footer p {
+    color: #8e8e8e;
+    font-size: 20px;
+    font-family: 'FuturaPT-Book';
+    line-height: 40px;
+    margin-bottom: 0px; }
+  footer .lower-items {
+    padding-top: 35px; }
+  footer nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between; }
+    footer nav a {
+      color: white;
+      font-size: 20px;
+      text-decoration-color: #b9a368 !important;
+      font-family: 'FuturaPT-Medium'; }
+      footer nav a:hover {
+        color: white;
+        border-bottom: 3px solid #b9a368;
+        text-decoration: none; }
+
+@media (max-width: 1199px) {
+  footer h1 {
+    font-size: 54px; }
+  footer nav {
+    margin-top: 30px; }
+  footer .lower-items {
+    display: flex;
+    justify-content: space-between; } }
 
 .main-text {
   display: flex;
@@ -88,7 +161,7 @@ body {
 
 .mod_upper {
   position: relative;
-  top: -135px; }
+  top: -72px; }
 
 .mod_flex {
   display: flex; }
@@ -99,14 +172,155 @@ body {
   align-items: center; }
 
 .main-model {
-  background: url("../img/main_model.JPG") no-repeat 100% 0;
+  background: url(../img/main_model.JPG) no-repeat 100% 35%;
   background-size: cover;
   width: 110%;
   max-width: 682px;
   height: 780px; }
 
+#about {
+  margin-top: 90px; }
+  #about .mod-font-1 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0; }
+  #about .mod-font-2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-family: 'FUtura-Medium'; }
+  #about .text-description {
+    font-size: 27px;
+    font-family: 'FuturaPT-Book';
+    line-height: 31px; }
+
+#education {
+  margin-top: 85px; }
+  #education .text-block-1 {
+    margin: 65px 0 95px 0;
+    font-size: 36px; }
+    #education .text-block-1 p:first-child {
+      margin-bottom: 0; }
+    #education .text-block-1 .text-mod-1 {
+      color: #b9a368;
+      font-weight: 500; }
+    #education .text-block-1 .text-mod-2, #education .text-block-1 .text-mod-3 {
+      font-family: 'LucidaHandwritingItalic'; }
+    #education .text-block-1 .text-mod-3 {
+      padding-left: 155px; }
+  #education .education-block {
+    background: url("../img/3.png") no-repeat center 280px;
+    background-size: 100%;
+    border: 4px solid #b9a368;
+    font-family: 'Futura Medium'; }
+    #education .education-block p:first-child {
+      font-size: 20px;
+      color: #b9a368;
+      padding-top: 15px;
+      margin-bottom: 8px; }
+    #education .education-block p {
+      padding-left: 10px; }
+    #education .education-block .text-block-1 {
+      margin-top: 0; }
+    #education .education-block .text-mod-1 {
+      font-size: 36px; }
+    #education .education-block .text-mod-2 {
+      font-size: 27px;
+      font-family: 'FuturaPT-Book'; }
+    #education .education-block .education-button {
+      color: white;
+      font-size: 20px;
+      background-color: #b9a368;
+      margin-left: 10px;
+      padding: 10px 20px;
+      border-radius: 7px;
+      display: inline-block;
+      text-decoration: none;
+      z-index: 99;
+      position: relative;
+      top: 13px; }
+    #education .education-block img {
+      max-height: 350px;
+      width: 100%; }
+
+#studio .row {
+  flex-wrap: nowrap; }
+
+.bgimg-block {
+  width: 100%;
+  height: 350px; }
+
+#clients .row {
+  flex-wrap: wrap; }
+
+#clients .mainly-text {
+  color: #b9a368;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 65px 0 15px 0;
+  font-family: 'Futura Medium'; }
+
+#instagram {
+  margin: 65px 0 35px 0; }
+  #instagram .mainly-text {
+    color: #b9a368;
+    font-weight: 500;
+    font-size: 36px;
+    font-family: 'Futura Medium'; }
+  #instagram .follow_inst-btn {
+    color: white;
+    background-color: #b9a368;
+    border-radius: 7px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-family: 'Futura Medium';
+    text-decoration: none; }
+  #instagram .lightwidget-block {
+    margin-top: 23px; }
+
 @media (max-width: 1199px) {
-  .main-text h1 {
-    font-size: 56px; }
-  .main-text p {
-    font-size: 30px; } }
+  #studio {
+    overflow: hidden; }
+  .main-text {
+    padding-top: 250px;
+    justify-content: inherit; }
+    .main-text h1 {
+      font-size: 56px;
+      padding-top: 0; }
+    .main-text p {
+      font-size: 29px; }
+  .main-model {
+    background-position: 45% 0;
+    width: 130%; }
+  .mod_upper {
+    top: -25px; }
+  #about .text-description {
+    font-size: 22px;
+    line-height: 26px; }
+  #about .mod-font-1 {
+    font-size: 29px;
+    padding-bottom: 5px; }
+  #about .mod-font-2 {
+    font-size: 18px; }
+  #education {
+    margin-top: 65px; }
+    #education .text-block-1 {
+      margin: 0 0 65px 0; }
+      #education .text-block-1 .text-mod-3 {
+        padding-left: 116px; }
+    #education .education-block {
+      background-position: center 185px; }
+    #education .text-mod-1 {
+      font-family: 'Futura Medium';
+      font-size: 29px;
+      margin-bottom: 0; }
+    #education .text-mod-2 {
+      font-size: 29px;
+      margin-bottom: 0; }
+    #education .text-mod-3 {
+      font-size: 29px; }
+    #education .bgimg-block {
+      height: 440px; }
+  #instagram .mainly-text {
+    font-size: 29px; }
+  #clients .mainly-text {
+    font-size: 29px; } }

@@ -1,3 +1,4 @@
+
 .main-text {
 	display:flex;
 	flex-direction:column;
@@ -21,7 +22,8 @@
 }
 .mod_upper {
 	position: relative;
-	top: -135px;
+	top: -72px;
+	// top: -135px;
 }
 .mod_flex {
 	display:flex;
@@ -31,12 +33,148 @@
 	justify-content: space-between;
 	align-items: center;
 }
+// .main-model {
+// 	background: url("../img/main_model.JPG") no-repeat 100% 0;
+// 	background-size: cover;
+// 	width:110%;
+// 	max-width:682px;
+// 	height:780px;
+// }
 .main-model {
-	background: url("../img/main_model.JPG") no-repeat 100% 0;
+	background: url(../img/main_model.JPG) no-repeat 100% 35%;
 	background-size: cover;
-	width:110%;
-	max-width:682px;
-	height:780px;
+	width: 110%;
+	max-width: 682px;
+	height: 780px;
+}
+
+#about {
+	margin-top: 90px;
+	.mod-font-1{
+		font-size: 36px;
+		font-weight: 500;
+		margin-bottom: 0;
+	}
+	.mod-font-2 {
+		font-size: 20px;
+		margin-bottom: 25px;
+		font-family: 'FUtura-Medium';
+	}
+	.text-description{
+		font-size: 27px;
+		font-family: 'FuturaPT-Book';
+		line-height: 31px;
+	}
+}
+
+#education {
+
+	margin-top: 85px;
+	.text-block-1 {
+		margin: 65px 0 95px 0;
+		p:first-child {
+			margin-bottom: 0;
+		}
+		font-size: 36px;
+		.text-mod-1 {
+			color: #b9a368;
+			font-weight: 500;
+		}
+		.text-mod-2,.text-mod-3 {
+			font-family: 'LucidaHandwritingItalic';
+		}
+		.text-mod-3 {
+			padding-left: 155px;
+		}
+	}
+
+	.education-block {
+		background: url("../img/3.png") no-repeat center 280px;
+		background-size:100%;
+		border: 4px solid #b9a368;
+		font-family: 'Futura Medium';
+		p:first-child {
+			font-size: 20px;
+			color:#b9a368;
+			padding-top: 15px;	
+			margin-bottom: 8px;	    	
+		}
+		p {
+			padding-left: 10px;
+		}
+		.text-block-1 {
+			margin-top: 0;
+		}
+		.text-mod-1 {
+			font-size: 36px;
+		}
+		.text-mod-2	{
+			font-size: 27px;
+			font-family: 'FuturaPT-Book';
+		}
+		.education-button {
+			color: white;
+			font-size: 20px;
+			background-color: #b9a368;
+			margin-left: 10px;
+			padding: 10px 20px;
+			border-radius: 7px;
+			display: inline-block;
+			text-decoration: none;
+			z-index: 99;
+			position: relative;
+			top:13px;
+		}
+		img {
+			max-height: 350px;
+			width: 100%;
+		}
+	}
+}
+
+#studio {
+	.row {
+		flex-wrap:nowrap;
+	}
+}
+
+.bgimg-block {
+	width:100%;
+	height: 350px;
+}
+
+#clients {
+	.row {
+		flex-wrap: wrap;
+	}
+	.mainly-text {
+		color: #b9a368;
+		font-weight: 500;
+		font-size: 36px;
+		margin:65px 0 15px 0;
+		font-family: 'Futura Medium';
+	}
+}
+#instagram {
+	margin:65px 0 35px 0;
+	.mainly-text {
+		color: #b9a368;
+		font-weight: 500;
+		font-size: 36px;
+		font-family: 'Futura Medium';
+	}
+	.follow_inst-btn {
+		color: white;
+		background-color: #b9a368;
+		border-radius: 7px;
+		padding: 5px 15px;
+		font-size: 20px;
+		font-family: 'Futura Medium';
+		text-decoration: none;
+	}
+	.lightwidget-block {
+		margin-top: 23px;
+	}
 }
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) { 
@@ -55,12 +193,80 @@
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199px) {
-		.main-text {
+	#studio {
+		overflow: hidden;
+	}
+	.main-text {
+		padding-top: 250px;
+		justify-content: inherit;
 		h1 {
-font-size: 56px;
+			font-size: 56px;
+			padding-top: 0;
 		}
 		p {
-			font-size: 30px;
+			font-size: 29px;
+		}
+	}
+	.main-model {
+		background-position: 45% 0;
+		width: 130%;
+	}
+	.mod_upper {
+		top: -25px;
+	}
+	#about {
+		.text-description {
+			font-size: 22px;
+			line-height: 26px;
+		}
+		.mod-font-1 {
+			font-size: 29px;
+			padding-bottom: 5px;
+		}
+		.mod-font-2 {
+			font-size: 18px;
+		}
+	}
+	#education {
+		margin-top: 65px;
+		.text-block-1 {
+			margin: 0 0 65px 0;
+			.text-mod-3 {
+				padding-left: 116px;
+			}
+		}
+		.education-block p:first-child {
+
+		}
+		.education-block {
+			background-position: center 185px;
+		}
+		.text-mod-1 {
+			font-family: 'Futura Medium';
+			font-size: 29px;
+			margin-bottom: 0;
+		}
+		.text-mod-2 {
+			font-size: 29px;
+			margin-bottom: 0;
+		}
+		.text-mod-3 {
+			font-size: 29px;
+		}
+		.bgimg-block {
+			height:440px;
+		}
+	}
+
+	#instagram {
+		.mainly-text {
+			font-size: 29px;
+		}
+	}
+
+	#clients {
+		.mainly-text {
+			font-size: 29px;
 		}
 	}
 }
