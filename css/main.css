@@ -153,7 +153,7 @@ footer {
     right: 9px; }
   .main-text p {
     font-size: 36px;
-    font-family: 'Futura Medium'; }
+    font-family: 'FuturaPT-Medium'; }
 
 .main-girl {
   width: 636px;
@@ -179,7 +179,7 @@ footer {
   height: 780px; }
 
 #about {
-  margin-top: 90px; }
+  margin-top: 3px; }
   #about .mod-font-1 {
     font-size: 36px;
     font-weight: 500;
@@ -204,9 +204,10 @@ footer {
       color: #b9a368;
       font-weight: 500; }
     #education .text-block-1 .text-mod-2, #education .text-block-1 .text-mod-3 {
+      padding-left: 15px;
       font-family: 'LucidaHandwritingItalic'; }
     #education .text-block-1 .text-mod-3 {
-      padding-left: 155px; }
+      padding-left: 170px; }
   #education .education-block {
     background: url("../img/3.png") no-repeat center 280px;
     background-size: 100%;
