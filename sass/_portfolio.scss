@@ -1,0 +1,136 @@
+.text {
+	font-size: 70px;
+	font-family: 'LucidaHandwritingItalic';
+	line-height: 90px;
+}
+#about-works {
+	margin-top: 65px;
+	img {
+		padding-top: 15px;
+	}
+	.text-mod-1 {
+		color: #b9a368;
+		font-weight: 500;
+		font-size: 36px;
+	}
+	.text-mod-2 {
+		text-transform: uppercase;
+		font-size: 27px;
+		font-family: 'FuturaPT-Medium';
+		line-height: 26px;
+	}
+	.second-block,.threed-block {
+		padding-top: 21px;
+		li {
+			list-style-type: none;
+		}
+		ul {
+			font-family: 'FuturaPT-Light';
+			font-size: 27px;
+			line-height: 30px;
+		}
+	}
+	.second-block {
+		ul {
+			padding-top: 20px;
+		}
+	}
+	.threed-block{
+		ul {
+			padding-top: 22px;
+		}
+	}
+}
+.text-block {
+	margin-top: 75px;
+}
+.text-mod-1 {
+	color: #b9a368;
+	font-weight: 500;
+	font-size: 36px;
+}
+#design {
+	margin-top: 65px;
+	.text-mod-1 {
+		color: #b9a368;
+		font-weight: 500;
+		font-size: 36px;
+	}
+	.text-mod-2 {
+		font-size: 27px;
+		font-family: 'FuturaPT-Medium';
+		line-height: 26px;
+		padding-top: 20px;
+	}
+	.collection-1 {
+		margin-top: 25px;
+		img {
+			margin:12.5px 0;
+		}	
+	}
+}
+#lingerie-techonogist,#lingerie-techonogist_bliss,#lingerie-techonogist_wild_orchid,#lingerie-techonogist_man {
+	margin-top: 65px;
+	.row {
+		flex-wrap:wrap;
+	}
+	.collection-2 {
+		margin-top: 25px;
+		img {
+			margin:12.5px 0;
+		}
+	}
+}
+@media (max-width: 1199px) {
+	.text {
+		font-size: 55px;
+		line-height: 60px;
+	}
+	.header-wrapper {
+		display:flex;
+		flex-direction: column;
+		header {
+			order: 2;
+		}
+	}
+	.text-block {
+		margin-top: 15px;
+	}
+	#about-works {
+		margin-top: 15px;
+		.text-mod-1 {
+			font-size: 30px;
+		}
+		.second-block {
+			font-size: 27px;
+		}
+	}
+
+	#design {
+		.row {
+			flex-direction:column;
+		}
+		.text-mod-1 {
+			font-size: 30px;
+		}
+		.text-mod-2 {
+			font-size: 27px;
+			font-family: 'FuturaPT-Medium';
+			line-height: 26px;
+			padding-top: 15px;
+		}
+		.collection-1{
+			.row {
+				flex-wrap:wrap;
+				flex-direction:row;
+			}
+		}
+	}
+	.text-mod-1 {
+		font-size: 30px;
+	}
+	#lingerie-techonogist,#lingerie-techonogist_bliss,#lingerie-techonogist_wild_orchid,#lingerie-techonogist_man {
+
+	}
+
+}

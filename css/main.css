@@ -48,6 +48,13 @@ body {
 #navigation, #navigation-addon {
   font-family: 'FuturaPT-Medium';
   margin-top: 25px; }
+  #navigation.navigation-portfolio, #navigation-addon.navigation-portfolio {
+    position: inherit;
+    top: inherit; }
+    #navigation.navigation-portfolio ul, #navigation-addon.navigation-portfolio ul {
+      flex-direction: row; }
+    #navigation.navigation-portfolio .visible-items, #navigation-addon.navigation-portfolio .visible-items {
+      position: absolute; }
   #navigation a, #navigation-addon a {
     font-size: 20px;
     color: black; }
@@ -70,6 +77,9 @@ body {
       flex-direction: column;
       padding: 0; }
 
+#navigation-addon.portfolio-menu a {
+  color: black; }
+
 #navigation-addon ul {
   justify-content: flex-end; }
 
@@ -86,6 +96,8 @@ body {
 
 #navigation ul {
   justify-content: space-around; }
+  #navigation ul.visible-items {
+    background-color: white; }
 
 @media (max-width: 767px) {
   .row {
@@ -101,7 +113,11 @@ body {
         position: relative; }
     #navigation img {
       width: 6px;
-      bottom: 2px; } }
+      bottom: 2px; }
+  #navigation-addon.portfolio-menu a {
+    color: black; }
+  #navigation-addon.portfolio-menu ul {
+    justify-content: center; } }
 
 footer {
   background-color: #262626;
@@ -332,3 +348,99 @@ footer {
     font-size: 29px; }
   .lower img:last-child {
     padding-right: 30px; } }
+
+.text {
+  font-size: 70px;
+  font-family: 'LucidaHandwritingItalic';
+  line-height: 90px; }
+
+#about-works {
+  margin-top: 65px; }
+  #about-works img {
+    padding-top: 15px; }
+  #about-works .text-mod-1 {
+    color: #b9a368;
+    font-weight: 500;
+    font-size: 36px; }
+  #about-works .text-mod-2 {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-family: 'FuturaPT-Medium';
+    line-height: 26px; }
+  #about-works .second-block, #about-works .threed-block {
+    padding-top: 21px; }
+    #about-works .second-block li, #about-works .threed-block li {
+      list-style-type: none; }
+    #about-works .second-block ul, #about-works .threed-block ul {
+      font-family: 'FuturaPT-Light';
+      font-size: 27px;
+      line-height: 30px; }
+  #about-works .second-block ul {
+    padding-top: 20px; }
+  #about-works .threed-block ul {
+    padding-top: 22px; }
+
+.text-block {
+  margin-top: 75px; }
+
+.text-mod-1 {
+  color: #b9a368;
+  font-weight: 500;
+  font-size: 36px; }
+
+#design {
+  margin-top: 65px; }
+  #design .text-mod-1 {
+    color: #b9a368;
+    font-weight: 500;
+    font-size: 36px; }
+  #design .text-mod-2 {
+    font-size: 27px;
+    font-family: 'FuturaPT-Medium';
+    line-height: 26px;
+    padding-top: 20px; }
+  #design .collection-1 {
+    margin-top: 25px; }
+    #design .collection-1 img {
+      margin: 12.5px 0; }
+
+#lingerie-techonogist, #lingerie-techonogist_bliss, #lingerie-techonogist_wild_orchid, #lingerie-techonogist_man {
+  margin-top: 65px; }
+  #lingerie-techonogist .row, #lingerie-techonogist_bliss .row, #lingerie-techonogist_wild_orchid .row, #lingerie-techonogist_man .row {
+    flex-wrap: wrap; }
+  #lingerie-techonogist .collection-2, #lingerie-techonogist_bliss .collection-2, #lingerie-techonogist_wild_orchid .collection-2, #lingerie-techonogist_man .collection-2 {
+    margin-top: 25px; }
+    #lingerie-techonogist .collection-2 img, #lingerie-techonogist_bliss .collection-2 img, #lingerie-techonogist_wild_orchid .collection-2 img, #lingerie-techonogist_man .collection-2 img {
+      margin: 12.5px 0; }
+
+@media (max-width: 1199px) {
+  .text {
+    font-size: 55px;
+    line-height: 60px; }
+  .header-wrapper {
+    display: flex;
+    flex-direction: column; }
+    .header-wrapper header {
+      order: 2; }
+  .text-block {
+    margin-top: 15px; }
+  #about-works {
+    margin-top: 15px; }
+    #about-works .text-mod-1 {
+      font-size: 30px; }
+    #about-works .second-block {
+      font-size: 27px; }
+  #design .row {
+    flex-direction: column; }
+  #design .text-mod-1 {
+    font-size: 30px; }
+  #design .text-mod-2 {
+    font-size: 27px;
+    font-family: 'FuturaPT-Medium';
+    line-height: 26px;
+    padding-top: 15px; }
+  #design .collection-1 .row {
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .text-mod-1 {
+    font-size: 30px; } }
