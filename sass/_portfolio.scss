@@ -64,8 +64,32 @@
 	}
 	.collection-1 {
 		margin-top: 25px;
+		.item-hover {
+			margin-bottom: 25px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor:pointer;
+			background-color:#b9a368;
+			.hover-text {
+				position:absolute;
+				font-size: 27px;
+				color: white;
+				display:none;
+				font-family: 'FuturaPT-Medium';
+			}
+			&:hover {				
+				.hover-text {
+					display: inherit;
+				}
+			}
+		}
 		img {
-			margin:12.5px 0;
+			// margin:12.5px 0;
+			&:hover {
+				opacity: 0.1;
+				transition:  0.3s;
+			}
 		}	
 	}
 }

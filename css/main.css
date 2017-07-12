@@ -401,8 +401,24 @@ footer {
     padding-top: 20px; }
   #design .collection-1 {
     margin-top: 25px; }
-    #design .collection-1 img {
-      margin: 12.5px 0; }
+    #design .collection-1 .item-hover {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: #b9a368; }
+      #design .collection-1 .item-hover .hover-text {
+        position: absolute;
+        font-size: 27px;
+        color: white;
+        display: none;
+        font-family: 'FuturaPT-Medium'; }
+      #design .collection-1 .item-hover:hover .hover-text {
+        display: inherit; }
+    #design .collection-1 img:hover {
+      opacity: 0.1;
+      transition: 0.3s; }
 
 #lingerie-techonogist, #lingerie-techonogist_bliss, #lingerie-techonogist_wild_orchid, #lingerie-techonogist_man {
   margin-top: 65px; }
