@@ -94,6 +94,11 @@
 	#navigation {
 		position: absolute;
 		top:425px;
+		&.navigation-portfolio {
+			.visible-items {
+					display:none !important;
+				}	
+		}
 		ul {
 			flex-direction:column;
 			.visible-items {

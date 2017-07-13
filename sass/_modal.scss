@@ -1,0 +1,58 @@
+.modal {
+	position:fixed;
+	// top:0;
+	left:10000px;
+	z-index:1000;
+	width:100vw;
+	height: 100vh;
+	background-color: white;
+	display: block;
+	overflow-y:auto;
+}
+
+.modal-wrapper {
+	margin-top: 15px;
+	position:relative;
+	// top:50%;
+	// transform:translateY(-50%);
+}
+
+.modal-flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.close-modal {
+	position: absolute;
+	cursor:pointer;
+	&:hover {
+		transform:rotate(180deg);
+		transition:0.5s;
+	}
+}
+.modal-text {
+	font-family: 'FuturaPT-Medium';
+	font-size: 36px;
+}
+
+.gallery {
+	margin-top: 15px;
+	img {
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.bgitem {
+		height: 354px;
+	}
+	.carousel {
+		margin-top: 0;
+	}
+	.modal-wrapper {
+		.modal-text {
+			font-size: 30px;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+// .brassier {
+//     overflow: hidden;
+//     position: absolute;
+//     width: 874px;
+//     /* max-width: 110%; */
+//     height: 801px;
+//     background: url(../img/brassier.jpg) no-repeat center bottom;
+//     bottom: -495px;
+//     background-size: cover;
+// }
+
+.brassier {
+	overflow: hidden;
+	position: absolute;
+	width: 937px;
+	/* max-width: 110%; */
+	height: 801px;
+	background: url(../img/brassier.jpg) no-repeat left bottom;
+	bottom: -495px;
+	/* background-size: 937px; */
+	// left: 79px;
+}
+.text-block.modified {
+	margin-top: 55px;
+}
+section {
+	&.description {
+		margin-top: 45px;
+		position: relative;
+		z-index: 99;
+		.text-mod-2 {
+			font-size: 27px;
+			font-family: 'FuturaPT-Medium';
+			line-height: 26px;
+			padding-top: 40px;
+			padding-bottom: 20px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 27px;
+			font-family: 'FuturaPT-Light';
+			line-height: 31px;
+			&.modified {
+				padding-top: 24px;
+			}			
+		}
+	}
+}
+.play-icon {
+	padding-top: 24px;
+	margin-bottom: 70px;
+	z-index: 100;
+	position: relative;
+	opacity: 0.9;
+}
+footer {
+	// margin-top: 800px;
+}
+
+
+@media (max-width: 1199px) {
+	.brassier720 {
+		position:absolute;
+		// top:799px;
+		// bottom:100px;
+		overflow: hidden;
+		width: 100%;
+		bottom:0;
+		z-index:0;
+		height: 342px;
+		background: url('../img/brassier720.jpg') no-repeat 100% 100%;
+		background-size: 100vw;
+	}
+	.brassier-wrapper {
+		display:block;
+		margin-top: 105px;
+		position:relative;
+		background-color: grey;
+}
+}
+
+// .brassier {
+// 	overflow: hidden;
+// 	position: relative;
+// 	width: 950px;
+// 	max-width: 300%;
+// 	height: 800px;
+// 	background: url(../img/brassier2.jpg) no-repeat;
+// 	background-size: cover;
+// 	bottom: 146px;
+// }

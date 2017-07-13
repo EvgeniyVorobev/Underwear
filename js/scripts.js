@@ -44,15 +44,21 @@ function hideMenu() {
 	}
 }
 
-// Lightwidget modified
+// Modal windows
 
-
-// $(document).ready(function gridChange(){
-// 	if (innerWidth < 1199) {
-// 		console.log('ready');
-// 		var lightwidgetIframe = $('#lightwidget-iframe')[0];
-// 		console.log(lightwidgetIframe.contents());
-// 		// document.getElementsByClassName('lightwidget')[0].classList.add('AAAAAAAAAAAA')
-// 	}
-// })
+$(document).ready(function() {
+	$('#modal-window_1, #modal-window_2, #modal-window_3,#modal-window_4,#modal-window_5,#modal-window_6,#modal-window_7,#modal-window_8').click(function(e){ // Вешаем событие на id = modal-window_1;
+		var modalTarget = e.target.getAttribute('modal-target');
+		// $('body')[0].classList.add('fixed');
+		// $('#'+modalTarget).removeAttr('hidden');
+		$('body').attr('style','overflow-y: hidden');
+		$('#'+modalTarget).attr('style','left:0');
+		// $('#'+modalTarget).removeAttr('hidden');
+		$('.close-modal').click(function(){
+			// $('body')[0].classList.remove('fixed');
+			$('body').attr('style','');
+			$('#'+modalTarget).attr('style','left:10000px');
+		})
+	})
+})
 

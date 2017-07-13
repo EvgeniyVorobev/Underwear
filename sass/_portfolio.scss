@@ -87,8 +87,9 @@
 		img {
 			// margin:12.5px 0;
 			&:hover {
+				transition: .25s;
 				opacity: 0.1;
-				transition:  0.3s;
+				// transition:  0.3s;
 			}
 		}	
 	}

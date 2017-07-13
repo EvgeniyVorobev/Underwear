@@ -30,6 +30,9 @@ header {
 body {
   overflow-x: hidden; }
 
+.fixed {
+  position: fixed; }
+
 .ac-color {
   color: #b9a368; }
 
@@ -107,6 +110,8 @@ body {
   #navigation {
     position: absolute;
     top: 425px; }
+    #navigation.navigation-portfolio .visible-items {
+      display: none !important; }
     #navigation ul {
       flex-direction: column; }
       #navigation ul .visible-items {
@@ -417,8 +422,8 @@ footer {
       #design .collection-1 .item-hover:hover .hover-text {
         display: inherit; }
     #design .collection-1 img:hover {
-      opacity: 0.1;
-      transition: 0.3s; }
+      transition: .25s;
+      opacity: 0.1; }
 
 #lingerie-techonogist, #lingerie-techonogist_bliss, #lingerie-techonogist_wild_orchid, #lingerie-techonogist_man {
   margin-top: 65px; }
@@ -460,3 +465,100 @@ footer {
     flex-direction: row; }
   .text-mod-1 {
     font-size: 30px; } }
+
+.modal {
+  position: fixed;
+  left: 10000px;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: block;
+  overflow-y: auto; }
+
+.modal-wrapper {
+  margin-top: 15px;
+  position: relative; }
+
+.modal-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.close-modal {
+  position: absolute;
+  cursor: pointer; }
+  .close-modal:hover {
+    transform: rotate(180deg);
+    transition: 0.5s; }
+
+.modal-text {
+  font-family: 'FuturaPT-Medium';
+  font-size: 36px; }
+
+.gallery {
+  margin-top: 15px; }
+  .gallery img {
+    margin-bottom: 25px; }
+
+@media (max-width: 1199px) {
+  .bgitem {
+    height: 354px; }
+  .carousel {
+    margin-top: 0; }
+  .modal-wrapper .modal-text {
+    font-size: 30px; } }
+
+.brassier {
+  overflow: hidden;
+  position: absolute;
+  width: 937px;
+  /* max-width: 110%; */
+  height: 801px;
+  background: url(../img/brassier.jpg) no-repeat left bottom;
+  bottom: -495px;
+  /* background-size: 937px; */ }
+
+.text-block.modified {
+  margin-top: 55px; }
+
+section.description {
+  margin-top: 45px;
+  position: relative;
+  z-index: 99; }
+  section.description .text-mod-2 {
+    font-size: 27px;
+    font-family: 'FuturaPT-Medium';
+    line-height: 26px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase; }
+  section.description p {
+    font-size: 27px;
+    font-family: 'FuturaPT-Light';
+    line-height: 31px; }
+    section.description p.modified {
+      padding-top: 24px; }
+
+.play-icon {
+  padding-top: 24px;
+  margin-bottom: 70px;
+  z-index: 100;
+  position: relative;
+  opacity: 0.9; }
+
+@media (max-width: 1199px) {
+  .brassier720 {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+    height: 342px;
+    background: url("../img/brassier720.jpg") no-repeat 100% 100%;
+    background-size: 100vw; }
+  .brassier-wrapper {
+    display: block;
+    margin-top: 105px;
+    position: relative;
+    background-color: grey; } }
