@@ -15,7 +15,7 @@
 	width: 937px;
 	/* max-width: 110%; */
 	height: 801px;
-	background: url(../img/brassier.jpg) no-repeat left bottom;
+	background: url('../img/brassier.jpg') no-repeat left bottom;
 	bottom: -495px;
 	/* background-size: 937px; */
 	// left: 79px;
@@ -76,6 +76,9 @@ footer {
 		margin-top: 105px;
 		position:relative;
 		background-color: grey;
+}
+.text-block.modified {
+	margin-top: 15px;
 }
 }
 

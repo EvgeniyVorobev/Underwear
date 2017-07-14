@@ -1,0 +1,93 @@
+.contacts {
+	margin: 65px 0 90px 0;
+	.text-mod-2 {
+		padding: 40px 0 25px 0;
+		font-family: 'FuturaPT-Medium';
+		line-height: 26px;
+		font-size: 27px;
+	}
+	p {
+		margin-bottom: 24px;
+		font-size: 27px;
+		font-family: 'FuturaPT-Light';
+		display:flex;
+		align-items:center;
+		img {
+			padding-right: 10px;
+		}
+	}
+	.address {
+		font-size: 27px;
+		font-family: 'FuturaPT-Light';
+	}
+	.callback-form {
+		font-size: 30px;
+		color:black;
+		margin-top: 25px;
+		display: flex;
+		flex-direction: column;
+		input {
+			&:first-child {
+				margin-top: 0;
+			}
+			height: 27px;
+			font-family: 'FuturaPT-Light';
+			padding-left: 10px;
+			margin-top: 35px;
+			border:none;
+			border-left:2px solid #b9a368;
+			outline: 0;
+			&::-moz-placeholder { color: black; };
+			&::-webkit-input-placeholder { color: black; };
+		}
+		// input::-moz-placeholder { color: black; };
+		// input::-webkit-input-placeholder { color: black; };
+	}
+	textarea {
+		line-height: 26px;
+		font-family: 'FuturaPT-Light';
+		outline: 0;
+		padding-left: 10px;
+		margin-top: 35px;
+		border:none;
+		border-left:2px solid #b9a368;
+		&::-moz-placeholder { color: black; };
+		&::-webkit-input-placeholder { color: black; };
+		&::-o- { color: black; };
+	}
+	button {
+		margin-top: 23px;
+		font-family: 'FuturaPT-Medium';
+		font-size: 27px;
+		padding: 3px 15px;
+		width: 100px;
+		background-color: #b9a368;
+		outline: 0;
+		color: white;
+		cursor: pointer;
+		border: none;
+		border-radius: 6px;
+	}
+}
+
+@media (max-width:1199px) {
+	.contacts {
+		margin:35px 0 90px 0;
+		.text-mod-2 {
+			padding: 25px 0 25px 0;
+		}
+		form {
+			display: flex;
+			flex-direction: column
+		}
+		.mod720 {
+			margin-top: 60px;
+		}
+		button {
+			width: 110px;
+		}
+		.row {
+			flex-wrap: wrap;
+		}
+	}
+}

@@ -515,7 +515,7 @@ footer {
   width: 937px;
   /* max-width: 110%; */
   height: 801px;
-  background: url(../img/brassier.jpg) no-repeat left bottom;
+  background: url("../img/brassier.jpg") no-repeat left bottom;
   bottom: -495px;
   /* background-size: 937px; */ }
 
@@ -561,4 +561,86 @@ section.description {
     display: block;
     margin-top: 105px;
     position: relative;
-    background-color: grey; } }
+    background-color: grey; }
+  .text-block.modified {
+    margin-top: 15px; } }
+
+.contacts {
+  margin: 65px 0 90px 0; }
+  .contacts .text-mod-2 {
+    padding: 40px 0 25px 0;
+    font-family: 'FuturaPT-Medium';
+    line-height: 26px;
+    font-size: 27px; }
+  .contacts p {
+    margin-bottom: 24px;
+    font-size: 27px;
+    font-family: 'FuturaPT-Light';
+    display: flex;
+    align-items: center; }
+    .contacts p img {
+      padding-right: 10px; }
+  .contacts .address {
+    font-size: 27px;
+    font-family: 'FuturaPT-Light'; }
+  .contacts .callback-form {
+    font-size: 30px;
+    color: black;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column; }
+    .contacts .callback-form input {
+      height: 27px;
+      font-family: 'FuturaPT-Light';
+      padding-left: 10px;
+      margin-top: 35px;
+      border: none;
+      border-left: 2px solid #b9a368;
+      outline: 0; }
+      .contacts .callback-form input:first-child {
+        margin-top: 0; }
+      .contacts .callback-form input::-moz-placeholder {
+        color: black; }
+      .contacts .callback-form input::-webkit-input-placeholder {
+        color: black; }
+  .contacts textarea {
+    line-height: 26px;
+    font-family: 'FuturaPT-Light';
+    outline: 0;
+    padding-left: 10px;
+    margin-top: 35px;
+    border: none;
+    border-left: 2px solid #b9a368; }
+    .contacts textarea::-moz-placeholder {
+      color: black; }
+    .contacts textarea::-webkit-input-placeholder {
+      color: black; }
+    .contacts textarea::-o- {
+      color: black; }
+  .contacts button {
+    margin-top: 23px;
+    font-family: 'FuturaPT-Medium';
+    font-size: 27px;
+    padding: 3px 15px;
+    width: 100px;
+    background-color: #b9a368;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px; }
+
+@media (max-width: 1199px) {
+  .contacts {
+    margin: 35px 0 90px 0; }
+    .contacts .text-mod-2 {
+      padding: 25px 0 25px 0; }
+    .contacts form {
+      display: flex;
+      flex-direction: column; }
+    .contacts .mod720 {
+      margin-top: 60px; }
+    .contacts button {
+      width: 110px; }
+    .contacts .row {
+      flex-wrap: wrap; } }
